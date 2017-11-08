@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SEARCH RESULTS</title>
+</head>
+<body>
+<center>
+<h5><font size="5">SEARCH RESULTS ARE THE FOLLOWING</font></h5>
+    NOTE: Nothing is found if table is empty.
+<table border="1">
+         <thead>
+            <td>ID NUMBER</td>
+            <td>FIRST NAME</td>
+            <td>LAST NAME</td>
+            <td>MIDDLE NAME</td>
+            <td>SEX</td>
+            <td>COURSE DESCRIPTION</td>
+            <td>COURSE ID</td>
+            <td>YEAR LEVEL</td>
+            <td>COLLEGE</td>
+         </thead>
+
+         {% for row in coffee %}
+            <tr>
+               <td>{{row[0]}}</td>
+               <td>{{row[5]}}</td>
+               <td>{{row[4]}}</td>
+               <td>{{row[6]}}</td>
+               <td>{{row[7]}}</td>
+               <td>{{row[2]}}</td>
+               <td>{{row[1]}}</td>
+               <td>{{row[8]}}</td>
+               <td>{{row[3]}}</td>
+            </tr>
+         {% endfor %}
+</table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href = "/"><input type = "button" value = "GO BACK TO HOMEPAGE" /><br></a>
+</center>
+</body>
+</html>

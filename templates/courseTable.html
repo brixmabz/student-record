@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COURSES TABLE</title>
+</head>
+<body>
+    <center><h5><font size="5">ALL STUDENT'S COURSES</font></h5></center>
+    <center><table border="1">
+        <thead>
+        <td>COURSE ID</td>
+        <td>LAST NAME</td>
+        <td>FIRST NAME</td>
+        <td>COURSE DESCRIPTION</td>
+        <td>COLLEGE</td>
+        <td>YEAR LEVEL</td>
+        </thead>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["COURSE_ID"] }}</td>
+            <td>{{ row["LAST_NAME"] }}</td>
+            <td>{{ row["FIRST_NAME"] }}</td>
+            <td>{{ row["DESCRIPTION"] }}</td>
+            <td>{{ row["COLLEGE"] }}</td>
+            <td>{{ row["YEAR_LEVEL"] }}</td>
+        </tr>
+        {% endfor %}
+    </table></center>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><a href="/"><input type="button" value="GO BACK TO HOMEPAGE"></a> </center>
+</body>
+</html>

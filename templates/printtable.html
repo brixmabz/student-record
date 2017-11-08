@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LIST OF STUDENTS</title>
+</head>
+<body>
+    <center><h5><font size="5">THIS IS ALL THE STUDENTS ON THE RECORD</font></h5></center>
+    <center><table border="1">
+        <thead>
+        <td>ID NUMBER</td>
+        <td>FIRST NAME</td>
+        <td>MIDDLE NAME</td>
+        <td>LAST NAME</td>
+        <td>SEX</td>
+        <td>COURSE</td>
+        <td>YEAR LEVEL</td>
+        </thead>
+    {% for row in rows %}
+        <tr>
+            <td>{{row["ID"]}}</td>
+            <td>{{row["FIRST_NAME"]}}</td>
+            <td>{{row["MID_NAME"]}}</td>
+            <td>{{row["LAST_NAME"]}}</td>
+            <td>{{row["SEX"]}}</td>
+            <td>{{row["COURSE"]}}</td>
+            <td>{{row["YEAR_LEVEL"]}}</td>
+        </tr>
+    {% endfor %}
+    </table></center><br>
+    <center><a href="/studentcoursetable"><input type="button" value="SHOW STUDENT COURSES"></a></center><br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><a href="/"><input type="button" value="GO BACK TO HOMEPAGE"></a></center>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DELETE STUDENT</title>
+</head>
+<body>
+    <form action="/deletestudent" method="POST">
+        <center><h5><font size="5">STUDENT DELETION</font></h5></center>
+        <center>ENTER ID NUMBER</center>
+        <center><input type="text" name="id_number" required></center><br>
+        <center><a href="/"><input type="button" value="CANCEL"></a> <input type="submit" value="SUBMIT" /></center>
+    </form>
+    <center><h5>REFER TO THE TABLE BELOW</h5></center>
+    <center><table border="1">
+        <thead>
+        <td>ID NUMBER</td>
+        <td>LAST NAME</td>
+        <td>FIRST NAME</td>
+        <td>YEAR LEVEL</td>
+        <td>COURSE</td>
+        </thead>
+        {% for row in rows %}
+        <tr>
+            <td>{{ row["ID"] }}</td>
+            <td>{{ row["LAST_NAME"] }}</td>
+            <td>{{ row["FIRST_NAME"] }}</td>
+            <td>{{ row["YEAR_LEVEL"] }}</td>
+            <td>{{ row["COURSE"] }}</td>
+        </tr>
+        {% endfor %}
+    </table></center>
+</body>
+</html>
